@@ -1,0 +1,136 @@
+/* FlipGame.css */
+
+.flip-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh); /* Adjust height to full viewport */
+  background: linear-gradient(to right, #0099ff, #9933ff);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.start-screen {
+  text-align: center;
+}
+
+.start-screen h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button {
+  /* padding:0px 30px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  /* margin-top: 20px; */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+
+.start-button:hover,
+.reset-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.flip-game {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-game h2 {
+  font-size: 2.5rem;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Keep 4 columns */
+  gap: 5px; /* Reduce the gap between cards */
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* Limit the width of the grid */
+  margin-top: 100px; /* Adjust spacing above the grid */
+}
+
+.card {
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%; /* Decrease the height for smaller cards */
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px; /* Decrease font size */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.front {
+  background-color: #33cc33; /* Green */
+}
+
+.back {
+  background-color: #66ccff; /* Light blue */
+  transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-board {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

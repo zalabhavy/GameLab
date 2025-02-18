@@ -1,0 +1,15 @@
+.square {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.square:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+#message {
+  min-height: 1.5rem;
+}
+.home-icon {
+  transition: color 0.3s ease;
+}
+.home-icon:hover {
+  color: #3490dc; 
+}

@@ -1,0 +1,76 @@
+/* Main container styling */
+.body {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container for content */
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4c51bf;
+  margin-bottom: 20px;
+}
+
+.pTitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #cbd5e0;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  font-size: 2rem;
+  color: #e2e8f0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.pPara {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Social links container */
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.socialLink {
+  font-size: 1.1rem;
+  color: #4c51bf;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #ed8936;
+  transform: scale(1.05);
+}
+
+/* Hover effect */
+.socialLink:active {
+  transform: scale(0.98);
+}
