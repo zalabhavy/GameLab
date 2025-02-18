@@ -14,10 +14,10 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <div className="image-logo">
-          <a href="https://game-player-navy.vercel.app/">
+          <a href="https://github.com/zalabhavy/GameLab">
             <img src={logo} alt="Logo" height="36px" width="36px" />
           </a>
-          <a href="https://game-player-navy.vercel.app/">
+          <a href="https://github.com/zalabhavy/GameLab">
             <span className="logo">TeleGames</span>
           </a>
         </div>
