@@ -37,11 +37,6 @@ To run the project locally, follow these steps:
    npm install
    Add `.env` VITE_API_KEY=http://localhost:5000/
    npm run dev
-   
-   cd BACKEND
-   npm install
-   Add `.env` MONGO_URI=your-mongodb-connection-uri
-   npm start
    ```
 
 ## Current Status
